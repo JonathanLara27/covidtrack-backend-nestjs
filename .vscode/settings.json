@@ -1,0 +1,8 @@
+{
+    "todo-tree.tree.showBadges": false,
+    "todo-tree.tree.disableCompactFolders": false,
+    "todo-tree.tree.showCountsInTree": true,
+    "rest-client.defaultHeaders": {
+        "Content-Type": "application/json"
+    }
+}

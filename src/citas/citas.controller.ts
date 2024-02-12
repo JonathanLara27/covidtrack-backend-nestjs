@@ -2,7 +2,9 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { CitasService } from './citas.service';
 import { CreateCitaDto } from './dto/create-cita.dto';
 import { UpdateCitaDto } from './dto/update-cita.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Citas')
 @Controller('citas')
 export class CitasController {
   constructor(private readonly citasService: CitasService) {}

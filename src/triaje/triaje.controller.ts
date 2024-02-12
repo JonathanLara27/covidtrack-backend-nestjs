@@ -2,7 +2,9 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { TriajeService } from './triaje.service';
 import { CreateTriajeDto } from './dto/create-triaje.dto';
 import { UpdateTriajeDto } from './dto/update-triaje.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Triaje')
 @Controller('triaje')
 export class TriajeController {
   constructor(private readonly triajeService: TriajeService) {}

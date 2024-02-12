@@ -1,0 +1,19 @@
+@V1=http://localhost:8700/api
+
+#########
+POST {{V1}}/users
+
+{
+    "dni": "12345672",
+    "email": "asd@email.com",
+    "password": "brainlarA1aaaa",
+    "roleId": 2
+}
+
+
+########
+POST {{V1}}/roles
+
+{
+    "name": "doctor"
+}
